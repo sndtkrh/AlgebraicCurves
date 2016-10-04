@@ -1,0 +1,56 @@
+\documentclass{jreport}
+\usepackage[top=20truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage[all]{xy}
+
+\theoremstyle{definition}
+\newtheorem{thm}{定理}
+\newtheorem{prop}{命題}
+\newtheorem{dfn}{定義}
+\newtheorem{lem}{補題}
+\newtheorem{prob}{問題}
+\newtheorem*{ans}{解答}
+\newtheorem*{prf}{証明}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\Kernel}{\mathrm{Ker}}
+\newcommand{\Image}{\mathrm{Im}}
+\newcommand{\Coker}{\mathrm{Coker}}
+\renewcommand{\labelenumi}{(\arabic{enumi}).}
+\let\oldenumerate\enumerate
+\renewcommand{\enumerate}{
+  \oldenumerate
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+
+\title{Algebraic Curves 解答集}
+\author{}
+
+\begin{document}
+\maketitle
+\chapter{Affine Algebraic Sets}
+\input{./Ch1/s1.tex}
+\chapter{Affine Varieties}
+\chapter{Local Properties of Plane Curves}
+\chapter{Projective Varieties}
+\chapter{Projective Plane Curves}
+\chapter{Varieties, Morphisms, ans Rational Maps}
+\chapter{Resolution of Singularities}
+\chapter{Riemann-Roch Theorem}
+\end{document}
