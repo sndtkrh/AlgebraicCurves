@@ -2,6 +2,6 @@
 Algebraic Curves の解答
 ## PDF の作り方
 ~~~~
-$ platex answer
-$ dvipdfmx answer
+$ platex -kanji=utf8 answers
+$ dvipdfmx answers
 ~~~~
