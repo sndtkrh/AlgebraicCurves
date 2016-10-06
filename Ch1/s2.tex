@@ -3,7 +3,7 @@
   $\A^{1}(k)$の代数的部分集合は有限部分集合であることを示せ．
 \end{prob}
 \begin{ans}
-  $X \subset \A^1(k)$を代数的部分集合であるとする．
+  $X \subset \A^1(k)$を空でない代数的部分集合であるとする．
   $X = V( S )$となる$k[X]$の部分集合$S \ne \emptyset$が存在する．
   $f \in S$を取る．
   $f = \sum_{i=0}^n a_i X^i, a_i \in k$
@@ -11,4 +11,18 @@
   $f$の根は高々$n$個しかない．
   よって$X = V(S) \subseteq V(f)$であるから
   $X$は有限集合である．
+\end{ans}
+
+\begin{prob}
+  $k$が有限体ならば$\A^n(k)$の任意の部分集合は代数的であることを示せ．
+\end{prob}
+\begin{ans}
+  $k$を位数$q$の有限体とする．
+  任意の$p = (a^{(p)}_1, \dots , a^{(p)}_n ) \in \A^n(k)$について，
+  $V( X_1 - a^{(p)}_1, \dots , X_n - a^{(p)}_n ) = \{ p \} \subset \in A^n(k)$
+  である．
+  $\A^n(k)$の任意の部分集合$X$は有限集合である．
+  $X = \{ p_1, \dots , p_m \}$とおいて，
+  $X = V(X_1 - a^{(p_1)}_1, \dots , X_n - a^{(p_1)}_n ) \cup \cdots \cup V(X_1 - a^{(p_m)}_1, \dots , X_n - a^{(p_m)}_n ) $
+  であり，有限個の代数的集合の和は代数的集合であるので，$X$は代数的集合である．
 \end{ans}
