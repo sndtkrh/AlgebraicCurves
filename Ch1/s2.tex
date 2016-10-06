@@ -36,3 +36,32 @@
   一方これらの和$\{1,2,\dots\}$は無限集合である．
   したがって問題 \ref{n=1:代数的ならば有限} より，これは代数的集合ではない．
 \end{ans}
+
+\begin{prob}
+  次の集合が代数的であることを示せ．
+  \begin{itemize}
+    \item[(a)] $\{ (t,t^2,t^3 \in \A^3(k) \mid t \in k \}$
+    \item[(b)] $\{ (\cos t, \sin t) \in \A^2(\R) \mid t \in \R \} $
+    \item[(c)] $\A^2(\R)$の部分集合であって各点の極座標$(r,\theta)$が$r=\sin \theta$をみたすもの
+  \end{itemize}
+\end{prob}
+\begin{ans}
+  (a)．
+  $X^2-Y, X^3-Z \in k[X,Y,Z]$を考えると，
+  $V(X^2-Y,X^3-Z) = \{ (t,t^2,t^3 \in \A^3(k) \mid t \in k \}$となるので
+  これは代数的である．
+  
+  (b)．
+  $V(X^2 + Y^2 - 1) = \{ (\cos t, \sin t) \in \A^2(\R) \mid t \in \R \} $である．
+  よってこれは代数的である．
+
+  (c)．
+  $X = r \cos \theta, Y = r \sin \theta$なので
+  $ r = \sin \theta
+  \Leftrightarrow r^2 = r \sin \theta
+  \Leftrightarrow X^2 + Y^2 = Y
+  \Leftrightarrow X^2 + Y^2 - Y = 0 $
+  である．
+  したがって，$V(X^2 - Y^2 - Y) = \{ p \in \A^2(\R) \mid r = \sin \theta \} $
+  であるから，代数的である．
+\end{ans}
