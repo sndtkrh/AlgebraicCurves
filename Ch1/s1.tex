@@ -1,9 +1,9 @@
 \section{Algebraic Preliminaries}
 \begin{prob}
   $R$を整域とする．
-  (a)$F,G\in R[X_1, \dots ,X_n]$が次数$r,s$の斉次式であるとき，
+  (a) $F,G\in R[X_1, \dots ,X_n]$が次数$r,s$の斉次式であるとき，
   $FG$が次数$r+s$の斉次式であることを示せ．
-  (b)$R[X_1, \dots ,X_n]$の任意の斉次式の因子はまた斉次式であることを示せ．
+  (b) $R[X_1, \dots ,X_n]$の任意の斉次式の因子はまた斉次式であることを示せ．
 \end{prob}
 \begin{ans}
   (a)．
@@ -54,4 +54,29 @@
   題意は示された．
 \end{ans}
 
+\begin{prob}
+  $R$をPIDとする．
+  $P$を$R$の零でない真の素イデアルとする．
+  (a) $P$は既約元で生成されていることを示せ．
+  (b) $P$は極大であることを示せ．
+\end{prob}
+\begin{ans}
+  (a)．
+  $R$はPIDなので$P = (p), \exists p \in R$と書ける．
+  もし$p$が既約元でない，すなわち
+  $p = ab, \ a,b\in R$と分解されて$a,b$は単元でないとする．
+  このとき$a,b \not\in P$であるが$ab \in P$である．
+  これは$P$が素イデアルであることに反する．
+  よって$p$は既約元である．
 
+  (b)．
+  $I$を$R$のイデアルで，$P$を真に含むとする．
+  $I = (a), \exists a\in R$と書け，
+  $p \in (p) = P \subsetneq I = (a)$
+  なので$p = ba, \exists b \in R$となる．
+  $p$は既約元なので$a$は単元か単元と$p$の積でなければならず，
+  しかも$P \subsetneq I$であることから
+  $a$は単元でなければならない．
+  ゆえに$I = (a) = R$となる．
+  したがって$P$は極大である．
+\end{ans}
