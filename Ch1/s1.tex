@@ -80,3 +80,27 @@
   ゆえに$I = (a) = R$となる．
   したがって$P$は極大である．
 \end{ans}
+
+\begin{prob}
+  $k$を無限体とし，
+  $F \in k[X_1, \dots ,X_n]$であるとする．
+  任意の$a_1,\dots ,a_n \in k$に対して
+  $f(a_1,\dots,a_n) = 0$ならば$F = 0$であることを示せ．
+\end{prob}
+\begin{ans}
+  $n$に関する数学的帰納法で証明する．
+  $n=1$のとき，
+  $F(X) = \sum_i c_i X^i \in k[X]$と書ける．
+  $F$の$k$における根は高々$\deg(F) < \infty$個なので
+  任意の$a \in k$について$F(a) = 0$となるのは$F = 0$のときしかない．
+  $n$より小さいときに成り立つとして$n$のとき，
+  $ F = \sum_i F_i X_n^i \in k[X_1,\dots ,X_n] = k[X_1,\dots,X_{n-1}][X_n]$と書ける．
+  任意の$a_1,\dots,a_{n-1} \in k$に対して，
+  $F(a_1, \dots, a_{n-1}, X_n) = \sum_i F_i(a_1,\dots,a_{n-1}) X_n \in k[X_n]$の根は
+  有限個しかない．
+  よって任意の$a_1,\dots, a_{n-1}, a_n \in k$に対して
+  $F(a_1, \dots, a_{n-1}, a_n) = 0$となるには
+  各$i$について$F_i (a_1, \dots, a_{n-1}) = 0$でなければならない．
+  帰納法の仮定から$F_i = 0 \ \forall i$である．
+  したがって$F = 0$である．
+\end{ans}
