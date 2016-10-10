@@ -67,6 +67,24 @@
 \end{ans}
 
 \begin{prob}
+  $C$をアフィン平面曲線とし，
+  $L$を$\A^2(k)$の直線とする．
+  $L \not \subset C$である．
+  次数$n$の多項式$F$で
+  $C = V(F), \ F \in k[X,Y]$と書けるとする．
+  $L \cap C$は高々$n$点の有限集合であることを示せ．
+\end{prob}
+\begin{ans}
+  $L = V(Y-(aX+b))$と書けるとしてよい．
+  このとき，
+  $C \cap L = V( F, Y-(aX+b) ) = V( F(X,Y-(aX+b) )$である．
+  $F(X,aX+b) \in k[X]$は$F \not \subset C$なので$0$ではない．
+  $F(X,aX+b)$の次数は高々$n$であるので
+  根も高々$n$個である．
+  したがって$L\cap C$は高々$n$点の有限集合である．
+\end{ans}
+
+\begin{prob}
   次の集合が代数的でないことを示せ．
   \begin{itemize}
     \item[(a)] $\{(x,y) \in \A^2(\R) \mid y = \sin x\}$
