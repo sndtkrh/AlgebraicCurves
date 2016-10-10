@@ -107,3 +107,27 @@
   任意の$a \in \R$について$F(a) \ne 0$である．
   よって$(F)$は$\A^1(\R)$の集合のイデアルとはなり得ない．
 \end{ans}
+
+\begin{prob}
+  任意のイデアル$I \subset k[X_1,\dots,X_n]$について，
+  $V(I) = V(\Rad(I))$であることと，
+  $\Rad(I) \subset I(V(I))$であることを示せ．
+\end{prob}
+\begin{ans}
+  $I \subset \Rad(I)$なので
+  $V(I) \supset V(\Rad(I))$は自明．
+  $a = (a_1, \dots , a_n) \in V(I)$を任意にとる．
+  任意の$F\in I$について$F(a) = 0$である．
+  $G \in V(\Rad(I))$を任意の元とする．
+  ある$n$が存在して$G^n \in I$なので
+  $G^n(a) = 0$である．
+  体$k$は整域なので$G(a) = 0$である．
+  よって$a \in V(\Rad(I))$である．
+  つまり$V(I) \subset V(\Rad(I))$である．
+
+  $\Rad(I) \subset I(V(I))$であること示す．
+  上で示したことから$V(I) = V(\Rad(I))$なので
+  $I(V(I)) = I(V(\Rad(I)))$である．
+  よって本文中の性質(8)より
+  $\Rad(I) \subset I(V(\Rad(I))) = I(V(I))$である．
+\end{ans}
