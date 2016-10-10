@@ -65,3 +65,55 @@
   したがって，$V(X^2 - Y^2 - Y) = \{ p \in \A^2(\R) \mid r = \sin \theta \} $
   であるから，代数的である．
 \end{ans}
+
+\begin{prob}
+  $k$を代数的閉体，$F\in k[X_1,\dots,X_n]$を定数でない多項式とする．
+  $n\ge 1$ならば$\A^n(k) \setminus V(F)$が無限集合であり，
+  $n\ge 2$ならば$V(F)$が無限集合であることを示せ．
+  そして任意の真の代数的集合の補集合は無限集合であることを結論付けよ．
+\end{prob}
+\begin{ans}
+  $k$が代数的閉体なので問題\ref{代数的閉体は無限集合}より
+  $k$は無限集合であり，$n\ge 1$のとき$\A^n(k)$は無限集合である．
+  
+  $n\ge 1$とする．
+  もし$\A^n(k) \setminus V(F)$が有限ならば
+  $A^n(k)$が無限集合であることから
+  $V(F)$は無限集合である．
+  すると$F(X_1,\dots, X_n) \in k[X_1,\dots,X_n]$に
+  任意の$a_1,\dots,a_{n-1} \in k$を代入して得られる多項式
+  $\bar{F}(X_n) = F(a_1,\dots ,a_{n-1}, X_n) \in k[X_n]$
+  は高々有限個の$k$の元を除いて$\bar{F}(a) = 0 \ a\in k$となる．
+  つまり$\bar{F}$は無限個の根を持たなければならないが，これは不可能である．
+  よって$\A^n(k) \setminus V(F)$は無限集合である．
+
+  $n\ge 2$ならば$V(F)$が無限集合であることを数学的帰納法で証明する．
+  $n = 2$とする．
+  $F(X,Y) \in k[X,Y]$は$X$について定数でないとしてよい．
+  任意の$a \in k$に対して
+  $F(X,a) \in k[X]$となり，これは定数ではない．
+  $k$が代数的閉体であることから
+  $F(X,a)$はすくなくとも一つ根をもつ．これを$r_a \in k$をする．
+  いま$a\in k$は任意であったから
+  $ \{ (r_a, a) \mid a \in k \} \subset V(F) $である．
+  $k$は無限集合なので$V(F)$が無限集合であることが分かる．
+  
+  $n-1$以下のときは主張が成り立つとして$n$のとき，
+  $F(X_1, \dots, X_n) \in k[X_1,\dots,X_n]$
+  は$X_1$について定数でないとしてよい．
+  $a \in k$を任意にとり$X_n$に代入して得られる多項式は
+  $F(X_1, \dots, X_{n-1}, a) \in k[X_1,\dots,X_{n-1}]$
+  となり，帰納法の仮定から$V(F) \subset \A^{n-1}(k)$は
+  無限集合となる．
+  したがって$V(F) \subset \A^n(k)$は無限集合である．
+
+  $A = V(S)$を代数的集合であるとする．
+  $S = \{ F_{\lambda} \}_{\lambda\in\Lambda}$とおく．
+  $\A^n(k) \setminus A$が無限集合であることを示す．
+  \[ \A^n(k) \setminus A
+  = \A^n(k) \setminus \bigcap_{\lambda\in\Lambda} V(F_{\lambda})
+  = \bigcup_{\lambda\in\Lambda} \left( \A^n(k) \setminus V(F_{\lambda}) \right) \]
+  となる．
+  上で示したことから$\A^n(k) \setminus V(F_{\lambda}$は無限集合なので
+  $ \A^n(k) \setminus A$は無限集合である．
+\end{ans}
