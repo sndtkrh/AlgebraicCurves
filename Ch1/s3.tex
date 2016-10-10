@@ -131,3 +131,35 @@
   よって本文中の性質(8)より
   $\Rad(I) \subset I(V(\Rad(I))) = I(V(I))$である．
 \end{ans}
+
+\begin{prob}
+  $I = (X_1-a_1, \dots X_n-a_n) \subset k[X_1,\dots,X_n]$
+  が極大イデアルであることを示し，
+  自然な準同型$k\to k[X_1,\dots,X_n]/I$が同型であることを示せ．
+\end{prob}
+\begin{ans}
+  $J$を$I \subsetneq J \subset k[X_1,\dots,X_n]$であるイデアルとする．
+  多項式$ F \in J \setminus I$を一つとる．
+  問題\ref{X_i-a_iたちの積の和で書ける}より
+  $F = \sum \lambda_{(i)} (X_1 - a_1)^{i_1} \cdots (X_n - a_n)^{i_n}$
+  の形に書ける．
+  $F \not\in I$なので
+  ある$i$で$i_1 = \cdots = i_n = 0$で
+  $\lambda_{(i)} \ne 0$であるものが唯一つ存在するとしてよい．
+  この$i$を$i_0$とおく．
+  すると
+  $\lambda_0 = F - \sum_{i \ne i_0} \lambda_{(i)} (X_1 - a_1)^{i_1} \cdots (X_n - a_n)^{i_n} \in J$
+  である．
+  $0 \ne \lambda_0 \in k$は単元なので$J = R$である．
+  よって$I$は極大イデアルである．
+
+  自然な準同型$\phi : k\to k[X_1,\dots,X_n]/I$は単射である．
+  全射でもあることを示す．
+  任意の$\bar{F} \in k[X_1,\dots,X_n]/I, \ F \in k[X_1,\dots,X_n]$を考える．
+  $F(X_1,\dots,X_n) - F(a_1, \dots, a_n) = \sum \lambda_{(i)} (X_1 - a_1)^{i_1} \cdots (X_n - a_n)^{i_n}, \ 
+  \forall i_1, \dots, i_n \ge 1$
+  となる．よって$F(X_1,\dots,X_n) - F(a_1, \dots, a_n) \in I$
+  すなわち$\bar{F} = F(a_1, \dots, a_n) \in k[X_1,\dots,X_n]/I$である．
+  よって$\phi$は全射である．
+  以上より$\phi$は全単射準同型なので同型である．
+\end{ans}
