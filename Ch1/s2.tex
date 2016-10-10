@@ -67,6 +67,46 @@
 \end{ans}
 
 \begin{prob}
+  次の集合が代数的でないことを示せ．
+  \begin{itemize}
+    \item[(a)] $\{(x,y) \in \A^2(\R) \mid y = \sin x\}$
+    \item[(b)] $\{( z,w ) \in \A^2(\C) \mid |z|^2 + |w|^2 = 1 \}$
+    \item[(c)] $\{ (\cos t, \sin t, t) \in \A^3(\R) \mid t \in \R\}$
+  \end{itemize}
+\end{prob}
+\begin{ans}
+  (a)．
+  $A := \{(x,y) \in \A^2(\R) \mid y = \sin x\}$が代数的集合であると仮定する．
+  多項式の集合$S \subset \R[X,Y]$が存在して$A = V(S)$と書ける．
+  環準同型$\phi : \R[X,Y] \to \R[X]$を
+  $\phi(a) = a, a \in \R$，$\phi(X) = X$，$\phi(Y) = 0$を満たすものとして定める．
+  このとき$\phi(S) = \{\phi(F) \mid F \in S\}$とおくと，
+  $V(\phi(S)) \subset \A^1(\R)$は無限個の点$\{ n\pi \mid n \in \Z \}$を含む代数的集合となる．
+  しかしこれは問題\ref{n=1:代数的ならば有限}の結果に反する．
+  したがって$A$は代数的でない．
+  
+  (b)．
+  $B := \{ (z,w) \in \A^2(\C) \mid |z|^2 + |w|^2 = 1 \}$が代数的であると仮定する．
+  多項式の集合$T \subset \C[Z,W]$が存在して$B = V(S)$と書ける．
+  環準同型$\psi : \C[Z,W] \to \C[Z]$を
+  $\psi(a) = a, a \in \C$，$\psi(Z) = Z$，$\psi(W) = 0$を満たすものとして定める．
+  このとき$\psi(T) = \{\psi(F) \mid F \in T\}$とおくと，
+  $V(\psi(T)) \subset \A^1(\C)$は無限個の点$\{ z \in \C \mid |z|^2 = 1 \}$を含む代数的集合となる．
+  しかしこれは問題\ref{n=1:代数的ならば有限}の結果に反する．
+  したがって$B$は代数的でない．
+
+  (c)．
+  $C := \{ (\cos t, \sin t, t) \in \A^3(\R) \mid t \in \R\}$が代数的であると仮定する．
+  多項式の集合$U \subset \R[X,Y,Z]$が存在して$B = V(U)$と書ける．
+  環準同型$\theta : \R[X,Y,Z] \to \R[Z]$を
+  $\theta(a) = a, a \in \R$，$\theta(X) = 1$，$\theta(Y) = 0$，$\theta(Z) = Z$を満たすものとして定める．
+  このとき$\theta(U) = \{\theta(F) \mid F \in U\}$とおくと，
+  $V(\theta(U)) \subset \A^1(\R)$は無限個の点$\{ 2n\pi \mid n \in \Z \}$を含む代数的集合となる．
+  しかしこれは問題\ref{n=1:代数的ならば有限}の結果に反する．
+  したがって$C$は代数的でない．
+\end{ans}
+
+\begin{prob}
   $k$を代数的閉体，$F\in k[X_1,\dots,X_n]$を定数でない多項式とする．
   $n\ge 1$ならば$\A^n(k) \setminus V(F)$が無限集合であり，
   $n\ge 2$ならば$V(F)$が無限集合であることを示せ．
@@ -117,3 +157,4 @@
   上で示したことから$\A^n(k) \setminus V(F_{\lambda}$は無限集合なので
   $ \A^n(k) \setminus A$は無限集合である．
 \end{ans}
+
