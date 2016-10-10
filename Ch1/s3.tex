@@ -12,3 +12,48 @@
   よって$V = W \Rightarrow I(V) = I(W)$かつ
   $I(V) = I(W) \Rightarrow V(I(V)) = V(I(W)) \Rightarrow V = W$である．
 \end{ans}
+
+\begin{prob}
+  (a) $V \subset \A^n(k)$を代数的集合とする．
+  $P \in \A^n(k)$を$P\not\in V$である点とする．
+  このとき，
+  多項式$F \in k[X_1, \dots X_n] $であって，
+  全ての$Q\in V$について$F(Q) = 0$となり，
+  かつ$F(P) = 1$であるようなものが存在することを示せ．
+  (b) $P_1,\dots, P_r \in \A^n(k) \setminus V$を異なる点とする．
+  このとき多項式$F_1, \dots, F_n \in I(V)$であって，
+  $i\ne j$に対して$F_i(P_j) = 0$であり，
+  かつ$F_i(P_i) = 1$であるようなものが存在することを示せ．
+  (c) $P_1,\dots, P_r$，$V$を(b)で定めたものとする．
+  また$a_{ij} \in k, \ 1\le i,j \le r$とする．
+  このとき$G_i \in I(V)$であって
+  任意の$i,j$に対して$G_i(P_j) = a_{ij}$を満たすことを示せ．
+\end{prob}
+\begin{ans}
+  (a)．
+  $V$は代数的集合であるから
+  $V = V(S), S \subset k[X_1,\dots,X_n]$と書ける．
+  $G \in S$で$G(P) = a \ne 0$である多項式をとることができる．
+  なぜなら，もし$\forall G \in S, G(P) = 0$なら$P\in V$となってしまうからである．
+  $V$の定義から任意の$Q\in V$に対して$G(Q) = 0$である．
+  $F = \frac{1}{a} G$を$G$のすべての係数を$\frac{1}{a}$倍した多項式とする．
+  このとき任意の$Q \in V$に対して$F(Q) = 0$であり，
+  かつ$F(P) = \frac{1}{a}G(P) = \frac{1}{a} a = 1$である．
+  よってこの$F$が求める多項式である．
+  また$F \in I(V)$である．
+
+  (b)．
+  各$i=1,\dots, r$に対して，
+  $I( V \cup \{ P_1 , \dots , P_n \} ) \subsetneq I( V \cup \{ P_1 , \dots , \hat{P_i}, \dots , P_n \})$
+  であり，$W_i := V \cup \{ P_1 , \dots , \hat{P_i}, \dots , P_n \}$は代数的集合なので
+  (a)の結果から$F_i \in I(W_i) \subset I(V)$であって，
+  任意の$Q\in W_i$に対して$F_i(Q) = 0$，
+  特に$j \ne i$に対して$F_i(P_j) = 0$であって
+  $F_i(P_i) = 1$であるようなものが存在する．
+  この$F_1, \dots, F_r$たちが求める多項式である．
+  
+  (c)．
+  (b)で構成した$F_1, \dots, F_r$をとる．
+  各$i$について$G_i := a_{i1} F_1 + \cdots + a_{ir} F_r$と定めればよい．
+\end{ans}
+
