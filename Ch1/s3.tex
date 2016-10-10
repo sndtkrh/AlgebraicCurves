@@ -57,3 +57,38 @@
   各$i$について$G_i := a_{i1} F_1 + \cdots + a_{ir} F_r$と定めればよい．
 \end{ans}
 
+\begin{prob}
+  $I\subset R$をイデアルとする．
+  $a^n \in I$かつ$b^m\in I$ならば
+  $(a+b)^{n+m} \in I$を示せ．
+  $\Rad(I)$はイデアルであることを示せ．
+  任意の素イデアルは根基イデアルであることを示せ．
+\end{prob}
+\begin{ans}
+  $a^n \in I$かつ$b^m\in I$とする．
+  $(a+b)^{n+m} = \sum_{k} \binom{n+m}{k} a^{n+m-k}b^k$
+  である．
+  各$k$について，$n+m-k \ge n$または$k \ge m$が成り立つ．
+  よって$(a+b)^{n+m} \in I$である．
+
+  $\Rad(I)$がイデアルであることを示す．
+  まず，$\Rad(I) \supset I \ne \emptyset $である．
+  $\Rad(I)$は上で示したことから和について閉じている．
+  さらに任意の$a \in \Rad(I), \ r\in R$に対して，
+  ある$n$が存在して$ a^n \in I$が成り立つので，
+  $ (ra)^n = r^n a^n \in I $である．
+  したがって$ra \in \Rad(I)$が成り立つ．
+  よって$\Rad(I)$はイデアルである．
+
+  $P\subset R$が素イデアルであるとする．
+  $P \subset \Rad(P)$は自明．
+  $P \supset \Rad(P)$を示す．
+  $ a\in \Rad(P)$をとる．
+  ある$n$が存在して
+  $ a^n \in P$が成り立つ．
+  $P$は素イデアルであるので
+  $a\in P$または$a^{n-1} \in P$が成り立つ．
+  $a\in P$ならばよい．
+  $a^{n-1} \in P$なら帰納的に$a\in P$が言える．
+  よって$P \supset \Rad(P)$である．
+\end{ans}
