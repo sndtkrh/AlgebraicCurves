@@ -107,3 +107,18 @@
   $X,(X-1) \not\in I(V(F)) $なので
   $I(V(F))$は素イデアルでない．
 \end{ans}
+
+\begin{prob}
+  $V,W\subset \A^n(k)$を$V\subset W$である代数的集合とする．
+  $V$の各既約成分は$W$のある既約成分に含まれることを示せ．
+\end{prob}
+\begin{ans}
+  $V'$を$V$の既約成分とする．
+  $W = W_1 \cup \cdots \cup W_m $と既約分解する．
+  $V' \not \subset W_i, \forall i$であると仮定する．
+  もしある$i$に対して$W_i \subset V'$なら
+  $W = W_1 \cup \cdots \cup W_{i-1} \cup V' \cup W_{i+1} \cup \cdots \cup W_m $が，
+  そうでないなら$W = V' \cup W_1 \cup \cdots \cup W_m $が$W$の既約分解となっている．
+  しかしこれは既約分解の一意性に反する．
+  ゆえにある$i$が存在して$V' \subset W_i $となっている．
+\end{ans}
