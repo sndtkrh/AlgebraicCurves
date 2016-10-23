@@ -1,1 +1,28 @@
 \section{Algebraic Subsets of the Plane}
+
+\begin{prob}
+  $k=\R$とする．
+  (a) $I(V(X^2+Y^2+1)) = (1)$を示せ．
+  (b) $\A^2(\R)$の全ての代数的な部分集合は，
+  ある$F\in\R[X,Y]$に対して$V(F)$と表されることを示せ．
+\end{prob}
+\begin{ans}
+  (a)．
+  $V(X^2+Y^2+1) = \emptyset$なので
+  $I(V(X^2+Y^2+1)) = I(\emptyset) = (1)$
+
+  (b)．
+  $V\subset \A^2(\R)$を代数的集合とする．
+  $V = \A^2(\R)$のときは$V = V(0)$なのでよい．
+  $V \ne \A^2(\R)$とする．
+  $V = V_1 \cup \cdots \cup V_r$と既約成分分解する．
+  本文中 Corollary 2 より，
+  $V_i$は一点か$V(F_i)$である．
+  ここで$F_i \in \R[X,Y]$は既約多項式である．
+  $V_i \ne \A^2(\R)$のとき，
+  各$i$に対して，$V_i = \{ (a,b) \}$のときは
+  $F_i = (X-a)^2 + (Y-b)^2 \in \R[X,Y]$とおく．
+  すると$V_i = V(F_i)$である．
+  したがって，
+  $V = V(F_1) \cup \cdots \cup V(F_r) = V( F_1 \cdots F_r )$である．
+\end{ans}
