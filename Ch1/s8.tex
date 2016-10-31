@@ -67,3 +67,44 @@
   つまり$c$は$b$を割り切ることになるがこれは$c$の取り方に矛盾する．
   よって$L$は$K$上環として有限生成ではない．
 \end{ans}
+
+\begin{prob}
+  $R$を$S$の部分環とし，$S$を$T$の部分環とする：$R \subset R \subset T$．
+  \begin{itemize}
+  \item[(a)] $S = \sum_i Rv_i, T = \sum_j S w_j$ならば$ T = \sum_{i,j} R v_i w_j $を示せ．
+  \item[(b)] $S = R{v_1, \dots v_n], T = S[w_1, \dots ,w_m]$ならば$T = R[v_1, \dots v_n, w_1, \dots ,w_m]$を示せ．
+  \item[(c)] $R,S,T$が体で$S = R(v_1,\dots,v_n), T = S(w_1, \dots, w_m )$ならば$ T = R(v_1,\dots,v_n, w_1, \dots, w_m )$を示せ．
+  \end{itemize}
+  よって，3つの有限性の条件はそれぞれ推移的関係である．
+\end{prob}
+\begin{ans}
+  (a)．
+  $S = \sum_{i=1}^n Rv_i, T = \sum_{j=1}^m S w_j$とする．
+  任意の$t \in T$に対して
+  ある$s_1, \dots , s_m \in S$があって
+  $ t = s_1 w_1 + \cdots + s_m w_m $となる．
+  各$s_j$について
+  ある$ r_{j1}, \dots r_{jn} \in R $があって
+  $ s_j = r_{j1} v_1 + \cdots r_{jn} v_n $である．
+  よって
+  $ t = s_1 w_1 + \cdots + s_m w_m
+  = (r_{11} v_1 + \cdots + r_{1n} v_n ) w_1 + \cdots + (r_{m1} v_1 + \cdots + r_{mn} v_n ) w_m
+  = \sum_{i,j} r_{ji} v_i w_j \in \sum_{ij} R v_i w_j $である．
+  ゆえに$ T = \sum_{i,j} R v_i w_j $である．
+  
+  (b)．
+  $S = R{v_1, \dots v_n], T = S[w_1, \dots ,w_m]$ならば
+  $T = R[v_1, \dots v_n] [w_1, \dots ,w_m]
+  =  R[v_1, \dots v_n, w_1, \dots ,w_m]$
+
+  (c)．
+  $R,S,T$が体で
+  $S = R(v_1,\dots,v_n), T = S(w_1, \dots, w_m )$とする．
+  $ T = R(v_1,\dots,v_n) (w_1, \dots, w_m )$なので
+  任意の$F \in T $に対して
+  $F = \frac{F_1}{F_2}, \ F_1,F_2 \in R(v_1,\dots,v_n)[w_1, \dots, w_m]$と表される．
+  ある$G_i \in R[v_1, \dots, v_n] $があって
+  $ G_i F_i \in R[v_1,\dots,v_n, w_1, \dots, w_m]$となる．
+  よって$F = \frac{F_1}{F_2} = \frac{ G_1 G_2 F_1 }{ G_1 G_2 F_2 } \in R(v_1,\dots,v_n, w_1, \dots, w_m )$である．
+  したがって$ T =  R(v_1,\dots,v_n, w_1, \dots, w_m )$である．
+\end{ans}
